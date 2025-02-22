@@ -46,6 +46,7 @@ last_reauthor_country：国家列。
 国家分类：
 
 代码会自动读取数据文件，并根据国家将数据分组保存到指定路径。
+由于训练文件后缀是国家缩写，实际使用的国家是全程，因此需要加载预测国家列表（预测国家列表.xlsx）。
 
 性别预测：
 
@@ -60,9 +61,9 @@ last_reauthor_country：国家列。
 3. 参数设置
 confidence_level：设置预测的置信度阈值，默认为0.7。
 
-train_path：训练数据路径。
+train_path：训练数据路径。（此处使用的是通过WGND按照国家拆解出的姓名-性别对应数据）
 
-file_path：预测数据路径。
+file_path：需要预测数据路径。
 
 out_path：预测结果保存路径。
 
